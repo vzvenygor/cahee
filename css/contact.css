@@ -1,0 +1,47 @@
+.section {
+    margin: 0 auto;
+}
+
+.section__contact {
+    text-align: center;
+    background: url(../assets/img/section7-background.png);
+    color: #262626;
+}
+
+.section__contact_content {
+    max-width: 1200px;
+}
+
+.content__title {
+    font-size: 90px;
+    padding-top: 102px;
+}
+
+.content__papagraph {
+    font-size: 17px;
+    padding: 50px 400px 0;
+}
+
+.contact-form__container {
+    display: flex;
+    justify-content: center;
+    padding-top: 45px;
+}
+
+.contact-form {
+    padding-right: 170px;
+}
+
+.input {
+    width: 500px;
+    height: 50px;
+    margin-bottom: 16px;
+    border: none;
+    background-color: #00c4c4;
+}
+
+.input__submit {
+    border:0;
+    padding:0; 
+    font-size:0
+}

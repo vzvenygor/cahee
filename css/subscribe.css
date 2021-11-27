@@ -1,0 +1,84 @@
+h2{
+    margin: 0;
+padding:0;
+}
+section.subscribe {
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  width: 1200px;
+  height: 500px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+.left {
+  max-width: 1200px;
+  box-sizing: border-box;
+  position: absolute;
+  margin-left: 15px;
+}
+.subscribe__text {
+  max-width: 570px;
+  line-height: 1.5em;
+}
+.subscribe__text h2 {
+  font-size: 40px;
+  line-height: 27px;
+  color: #262626;
+  font-weight: 700;
+  margin-top: 34px;
+}
+.subscribe__text p {
+    margin: 30px 0;
+    color: #262626;
+    font-size: 17px;
+line-height: 27px;
+font-weight: 300;
+}
+.subscribe__form {
+  position: absolut;
+}
+
+
+input[type="email"] {
+  padding: 0;
+  width: 570px;
+  max-width: 570px;
+  height: 52px;
+  border-width: 1px;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+button.button-standart {
+  width: 200px;
+  height: 54px;
+  font-size: 20px;
+  line-height: 25px;
+  color: #ffffff;
+  font-weight: 300;
+  font-family: "Raleway";
+  filter: drop-shadow(0px 2px 2.5px rgba(0, 0, 0, 0.5));
+  border: #ffffff;
+}
+button.button-standart--green {
+  width: 170px;
+  background-color: #96b92c;
+  border-color: #96b92c;
+  margin-left: 30px;
+}
+::-webkit-input-placeholder {
+  font-size: 15px;
+  line-height: 27px;
+  color: #262626;
+  font-weight: 300;
+  font-family: "Raleway";
+}
+.subscribe__img {
+  position: absolute;
+  top: 25px;
+  right: -129px;
+  left: -148px;
+  z-index: -1;
+}
