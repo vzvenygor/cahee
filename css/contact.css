@@ -1,9 +1,15 @@
-.content__section {
+.section {
     margin: 0 auto;
-    max-width: 1200px;
+}
+
+.section__contact {
     text-align: center;
-    background: url(./assets/img/section7-background.png);
+    background: url(../assets/img/section7-background.png);
     color: #262626;
+}
+
+.section__contact_content {
+    max-width: 1200px;
 }
 
 .content__title {
