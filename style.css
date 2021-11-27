@@ -1,0 +1,41 @@
+body, html {
+    margin: auto;
+}
+.logo-cahee {
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    color: #262626;
+    font-weight: 400;
+    margin:0 0 0 50px;
+}
+.background--strawberry { background-image: url(/assets/strawberry.png);
+    margin: auto;
+    height: 1000px;
+    width: 1500px;
+    background-color: #f9f8fb ;
+}
+.get-free--font { 
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 300;
+}
+.get-free--button {
+    width: 200px;
+    height: 55px;
+    background-color: #ff6033;
+    
+}
+.display1 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+.display2 {
+    display: flex;
+    justify-content: space-between;
+}
+.text1 {
+    padding-left: 25px;
+    padding-right: 25px;
+}
