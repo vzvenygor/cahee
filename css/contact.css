@@ -1,6 +1,4 @@
-.section {
-    margin: 0 auto;
-}
+
 
 .section__contact {
     width: 100%;
@@ -9,11 +7,6 @@
     background-size: 100%;
     color: #262626;
     font-family: "Raleway", sans-serif;
-}
-
-.section__contact_content {
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 .content__title {
