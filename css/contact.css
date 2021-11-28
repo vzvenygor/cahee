@@ -3,8 +3,8 @@
 .section__contact {
     width: 100%;
     text-align: center;
-    background: url(../assets/img/section7-background.png) no-repeat;
-    background-size: 100%;
+    background: url(../assets/img/section7-background.png) center no-repeat;
+    background-size: cover;
     color: #262626;
     font-family: "Raleway", sans-serif;
 }
@@ -54,7 +54,7 @@
 
 .input__textarea {
     height: 250px;
-    /* margin-bottom: 120px; */
+    margin-bottom: 120px;
 }
 
 .input__textarea:focus {
