@@ -1,11 +1,13 @@
 
 
 .section__contact {
+    width: 100%;
     text-align: center;
-    background: url(../assets/img/section7-background.png);
+    background: url(../assets/img/section7-background.png) no-repeat;
+    background-size: 100%;
     color: #262626;
+    font-family: "Raleway", sans-serif;
 }
-
 
 .content__title {
     font-size: 90px;
@@ -14,7 +16,7 @@
 
 .content__papagraph {
     font-size: 17px;
-    padding: 50px 400px 0;
+    padding: 50px 300px 0;
 }
 
 .contact-form__container {
@@ -24,7 +26,7 @@
 }
 
 .contact-form {
-    padding-right: 170px;
+    padding-right: 150px;
 }
 
 .input {
@@ -33,10 +35,43 @@
     margin-bottom: 16px;
     border: none;
     background-color: #00c4c4;
+    opacity: 50%;
+    outline: 0;
+    padding-left: 20px;
+
+}
+
+.input::-webkit-input-placeholder {
+    color: white;
+}
+
+.input:focus {
+    opacity: 100%;
+    background-image: url(../assets/img/active.png);
+    background-size: 5px 52px;
+    background-repeat: no-repeat;
+}
+
+.input__textarea {
+    height: 250px;
+    /* margin-bottom: 120px; */
+}
+
+.input__textarea:focus {
+    background-image: none;
 }
 
 .input__submit {
     border:0;
     padding:0; 
-    font-size:0
+    font-size:0;
+}
+
+.contact-form__contacts {
+    text-align: left;
+    font-size: 25px;
+}
+
+.contact-form__contacts span {
+    font-weight: 600;
 }
