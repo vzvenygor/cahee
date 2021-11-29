@@ -9,6 +9,12 @@
     color: white;
 }
 
+.blog__paragraph {
+    font-size: 17px;
+    line-height: 25px; 
+    margin-bottom: 40px; 
+}
+
 .blog__items {
     display: flex;
     justify-content: center;
