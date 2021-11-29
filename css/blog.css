@@ -20,6 +20,7 @@
 
 .blog__item:nth-child(1) {
     background: url(../assets/img/blog1.png) no-repeat;
+    top: -3px;
 }
 
 .blog__item:nth-child(2) {
