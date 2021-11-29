@@ -17,11 +17,12 @@
 .blog__item {
     position: relative;
     cursor: pointer;
+    margin-right: 30px;
 }
 
 .blog__item:nth-child(1) {
     background: url(../assets/img/blog1.png) no-repeat;
-    top: -3px;
+    top: -2px;
 }
 
 .blog__item:nth-child(2) {
