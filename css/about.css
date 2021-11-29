@@ -1,0 +1,36 @@
+.section__about {
+  height: 700px;
+  background-color: #00baba;
+}
+
+.about__content {
+  max-width: 1220px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+h2.about__item_title {
+  font-size: 90px;
+  line-height: 27px;
+  color: #ffffff;
+  padding-top: 180px;
+  padding-bottom: 38px;
+}
+p.about__item_text {
+  margin: 15px 0;
+
+  font-size: 17px;
+  line-height: 27px;
+  color: #ffffff;
+  font-weight: 300;
+  font-family: "Raleway";
+}
+
+.about__item--left {
+  max-width: 570px;
+}
+
+.about__item--right {
+  max-width: 500px;
+}
