@@ -47,6 +47,7 @@ button.button-standart {
   font-family: "Raleway";
   filter: drop-shadow(0px 2px 2.5px rgba(0, 0, 0, 0.5));
   border: #ffffff;
+  cursor: pointer;
 }
 button.button-standart--green {
   width: 170px;

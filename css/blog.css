@@ -16,6 +16,7 @@
 
 .blog__item {
     position: relative;
+    cursor: pointer;
 }
 
 .blog__item:nth-child(1) {
@@ -73,6 +74,7 @@
     margin-top: 50px;
     margin-bottom: 120px;
     background: #f72b3b;
+    cursor: pointer;
 }
 
 .button__blog:active {
