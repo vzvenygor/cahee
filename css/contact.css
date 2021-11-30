@@ -69,9 +69,13 @@
 
 .contact-form__contacts {
     text-align: left;
-    font-size: 25px;
+    font-size: 17px;
 }
 
 .contact-form__contacts span {
     font-weight: 600;
+}
+
+.contact-form__contacts p {
+    padding-bottom: 20px;
 }

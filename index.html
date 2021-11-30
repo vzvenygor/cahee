@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/top.css">
+    <link rel="stylesheet" href="./css/about.css">
     <link rel="stylesheet" href="./css/services.css">
     <link rel="stylesheet" href="./css/contact.css" />
     <link rel="stylesheet" href="./css/gallery.css" />
@@ -19,16 +22,68 @@
     <link rel="stylesheet" href="./css/footer.css" />
 
     <title>Cahee</title>
+
   </head>
   <body>
     <div class="container">
-      <header></header>
+      <header>
+
+      </header>
       <main>
-        <section class="section section__top"></section>
+        <section class="section section__top" id="top">
+          <div class="header">
+            <div class="header__logo">
+              <span><a href="#">Cahee</a></span>
+            </div>
+            <div class="header__nav">
+              <nav class="nav">
+                <li class="nav__li"><a href="#top">HOME</a></li>
+                <li class="nav__li"><a href="#about">ABOUT</a></li>
+                <li class="nav__li"><a href="#services">SERVICES</a></li>
+                <li class="nav__li"><a href="#gallery">GALLERY</a></li>
+                <li class="nav__li"><a href="#blog">BLOG</a></li>
+                <li class="nav__li"><a href="#contact">CONTACT</a></li>
+              </nav>
+            </div>
+          </div>
+  
+          <div class="top__content">
+            <div class="top__content--left">
+              <div class="top__descr">
+                <h1 class="top__descr_title">Fresh Life</h1>
+                <span class="top__descr_paragraph">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</span>
+              </div>
+              <a href="#">
+                <button class="button-standart top__descr_button">GET FREE NOW</button>
+              </a>
+            </div>
 
-        <section class="section section__about"></section>
+          </div>
+          <div class="top__content_icon">
+            <img src="./assets/img/scroll.svg" alt="">
+          </div>
 
-        <section class="section section__services">
+        </section>
+
+        <section class="section section__about" id="about">
+          <div class="about__content">
+            <div class="about__left">
+              <img src="./assets/img/about-img.png" alt="">
+            </div>
+
+            <div class="about__descr">
+              <h2 class="about__descr_title">About Us</h2>
+              <p class="content__papagraph about__papagraph">
+                Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+              </p>
+              <p class="content__papagraph about__papagraph">
+                Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section__services" id="services">
           <div class="services__content">
             <div class="services__items">
                 <div class="services__item">
@@ -69,9 +124,10 @@
                 <h2 class="services__right-block_title">Our Services</h2>
                 <img src="./assets/img/tomato.png" alt="">
             </div>
-        </div>        </section>
+        </div>        
+      </section>
 
-        <section class="section section__gallery">
+        <section class="section section__gallery" id="gallery">
                 <div class="section__gallery_content">
           <h2 class="content__title content__title--gallery">Gallery</h2>
           <p class="content__papagraph content__papagraph--gallery">
@@ -97,7 +153,7 @@
         </div>
     </section>
 
-      <section class="section section__subscribe subscribe">
+      <section class="section section__subscribe subscribe" id="subscribe">
           <div class="left">
             <div class="subscribe__text">
               <h2>Subscribe To Us</h2>
@@ -123,7 +179,7 @@
           </div>
         </section>
 
-        <section class="section section__blog">
+        <section class="section section__blog" id="blog">
           <div class="blog__content">
             <h2 class="content__title">Blog</h2>
             <p class="content__papagraph blog__paragraph">
@@ -182,7 +238,7 @@
           </div>
         </section>
 
-        <section class="section section__contact">
+        <section class="section section__contact" id="contact">
           <div class="section__contact_content">
             <h2 class="content__title">Contact</h2>
             <p class="content__papagraph">
