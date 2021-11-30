@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/contact.css" />
     <link rel="stylesheet" href="./css/subscribe.css" />
@@ -19,41 +23,44 @@
   </head>
   <body>
     <div class="container">
-      <header>
+      <header id="home1" class="background-header">
         <section class="background--strawberry">
-          <header class="display1">
-            <h1 class="logo-cahee">Cahee</h1>
-            <section class="display2">
-              <a class="text1" href="#home1">HOME</a>
-              <a class="text1" href="#about1">ABOUT</a>
-              <a class="text1" href="#services1">SERVICES</a>
-              <a class="text1" href="#gallery1">GALLERY</a>
-              <a class="text1" href="#blog1">BLOG</a>
-              <a class="text1" href="#contact1">CONTACT</a>
+          <div class="header-text__container">
+<header class="display-top">
+            <h1><a class="logo-cahee" href="http://127.0.0.1:5501/index.html">Cahee</a> </h1>
+            <section class="display-menu-bar">
+              <a class="menu" href="#home1"><span class="menu-style">HOME</span> </a>
+              <a class="menu" href="#about1"><span class="menu-style">ABOUT</span> </a>
+              <a class="menu" href="#services1"><span class="menu-style">SERVICES</span> </a>
+              <a class="menu" href="#gallery1"><span class="menu-style">GALLERY</span></a>
+              <a class="menu" href="#blog1"><span class="menu-style">BLOG</span></a>
+              <a href="#contact1" class="menu contact--padding" ><span class="menu-style">CONTACT</span></a>
             </section>
           </header>
 
           <section>
-            <h2>Fresh Life</h2>
-            <p>
+            <h2 class="fresh-life--style">Fresh Life</h2>
+            <p class="information--style">
               Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               Ut enim ad minim veniam, quis nostrud exercitation ullamco.
             </p>
             <button class="get-free--button">
               <span class="get-free--font">GET FREE NOW</span>
             </button>
+            <article class="scroll--style" ><img src="/assets/img/scroll.svg" alt="" /></article>
+          </div>
+          
           </section>
-          <article><img src="/assets/scroll.svg" alt="" /></article>
+          
         </section>
       </header>
       <main>
-        <section class="section section__top"></section>
 
-        <section class="section section__about"></section>
+        <section id="about1" class="section section__about"></section>
 
-        <section class="section section__services"></section>
+        <section id="services1" class="section section__services"></section>
 
-        <section class="section section__gallery"></section>
+        <section id="gallery1" class="section section__gallery"></section>
 
         <section class="section section__subscribe subscribe">
           <div class="left">
@@ -84,9 +91,9 @@
           </div>
         </section>
 
-        <section class="section section__blog"></section>
+        <section id="blog1" class="section section__blog"></section>
 
-        <section class="section section__contact">
+        <section id="contact1" class="section section__contact">
           <div class="section__contact_content">
             <h2 class="content__title">Contact</h2>
             <p class="content__papagraph">

@@ -1,39 +1,83 @@
-
 .logo-cahee {
-    font-family: 'Pacifico', cursive;
-    font-size: 50px;
-    color: #262626;
-    font-weight: 400;
-    margin:0 0 0 50px;
+  font-family: "Pacifico", cursive;
+  font-size: 50px;
+  color: #262626;
+  font-weight: 400;
+  text-decoration: none;
 }
-.background--strawberry { background-image: url(/assets/strawberry.png);
-    margin: auto;
-    height: 1000px;
-    width: 1500px;
-    background-color: #f9f8fb ;
+.background-header {
+  background-color: #f9f8fb;
 }
-.get-free--font { 
-    font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-    color: #fff;
-    font-weight: 300;
+.header-text__container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 150px 0 150px;
+}
+.background--strawberry {
+  background-image: url(/assets/img/strawberry.png);
+  margin: auto;
+  height: 1000px;
+  width: 1500px;
+  background-color: #f9f8fb;
+}
+.get-free--font {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 300;
 }
 .get-free--button {
-    width: 200px;
-    height: 55px;
-    background-color: #ff6033;
-    
+  width: 200px;
+  height: 55px;
+  background-color: #ff6033;
+  filter: drop-shadow(0px 2px 2.5px rgba(0, 0, 0, 0.5));
+  border: none;
 }
-.display1 {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 50px;
+.display-top {
+  display: flex;
+  justify-content: space-between;
+  height: 147px;
+  align-items: center;
 }
-.display2 {
-    display: flex;
-    justify-content: space-between;
+.display-menu-bar {
+  display: flex;
+  justify-content: space-between;
 }
-.text1 {
-    padding-left: 25px;
-    padding-right: 25px;
+.menu {
+  padding-top: 13px;
+  padding-left: 19px;
+  padding-right: 19px;
+  font-size: 16px;
+  line-height: 25px;
+  color: #262626;
+  font-weight: 700;
+  text-decoration: none;
+}
+.menu-style {
+  color: #262626;
+}
+.menu-style:hover {
+  border-top: 3px solid #ff6033;
+  padding-top: 9px;
+}
+.contact--padding {
+  padding-right: 0px;
+}
+.fresh-life--style {
+  margin-top: 216px;
+  font-size: 60px;
+  color: #262626;
+}
+.information--style {
+  font-size: 17px;
+  color: #262626;
+  font-weight: 300;
+  width: 370px;
+  margin-bottom: 30px;
+}
+.scroll--style {
+  position: relative;
+  top: 320px;
+  text-align: center;
 }

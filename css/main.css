@@ -2,10 +2,15 @@ body {
     margin: 0;
     padding: 0;
 }
+html {
+    scroll-behavior: smooth;
+    
+}
 
 .container {
     font-family: "Raleway", sans-serif;
-    max-width: 1500px;
+    width: 100%;
     margin: 0 auto;
 }
+
 
