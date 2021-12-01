@@ -1,12 +1,8 @@
 .section__gallery {
   height: 1536px;
   background-color: #ffe92f;
-}
-
-.section__gallery_content {
-  max-width: 1200px;
-  margin: 0 auto;
   text-align: center;
+
 }
 
 p.content__papagraph.content__papagraph--gallery {

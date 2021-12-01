@@ -5,13 +5,7 @@
 }
 
 .header {
-    position: fixed;
-    left: 165px;
     display: flex;
-    margin: 0 auto;
-    max-width: 1200px;
-    z-index: 20;
-    background-color:rgba(249, 248, 251, 50%);
 }
 
 .header__logo {
