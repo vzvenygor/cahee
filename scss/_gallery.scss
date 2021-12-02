@@ -1,31 +1,39 @@
+$section-width: 1200px;
+
 .section__gallery {
-  height: 1536px;
   background-color: #ffe92f;
   text-align: center;
-
 }
 
 p.content__papagraph.content__papagraph--gallery {
-  margin: 50px auto 35px;
+  margin: 21px auto 39px;
   color: #262626;
 }
 
+h2.standart-title.content__title.content__title--gallery {
+  padding-top: 81px;
+  color: #262626;
+}
 .ilustration {
-  max-width: 1220px;
+  max-width: $section-width;
   margin: 0 auto;
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  &__part-right {
+    width: 33.33%;
+    flex-direction: column;
+  }
+
+  & img {
+    padding: 15px 15px;
+  }
 }
 
 img.aprikot {
   width: 64.1%;
-}
-
-.ilustration__part-right {
-  width: 33.33%;
-  flex-direction: column;
 }
 
 img.blueberry,
@@ -39,32 +47,20 @@ img.persimmon {
   width: 47.48%;
 }
 
-.ilustration img {
-  padding: 15px 15px;
-}
-
-h2.content__title--gallery {
-  margin: 0 auto;
-  line-height: 27px;
-  font-weight: 700;
-  padding-top: 118px;
-  color: #262626;
-}
-
 .content__papagraph--gallery {
   padding: 0;
   width: 630px;
   height: 69px;
   line-height: 27px;
   margin: 0 auto;
-
   text-align: center;
 }
 
-button.button-standart.button-standart--big {
+.button-standart--big {
   width: 200px;
   background-color: #5585a2;
   border-color: #5585a2;
   margin-top: 50px;
   text-align: center;
+  margin-bottom: 121px;
 }
