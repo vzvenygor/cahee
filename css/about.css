@@ -1,5 +1,6 @@
 .section__about {
-    background-image: radial-gradient(circle at center, #00c3c3 0%, #00b8b7 32%, #00afae 68%, #00a09f 100%);
+    /*background-image: radial-gradient(circle at center, #00c3c3 0%, #00b8b7 32%, #00afae 68%, #00a09f 100%);*/
+    background-color: #00b0b0;
 }
 
 .about__content {
@@ -7,9 +8,11 @@
     justify-content: center;
 }
 
-.about__left {
+.about__left-block {
     padding: 72px 100px 74px 0; 
-
+}
+.about__left-block img {
+    filter: drop-shadow(-18.794px 6.84px 25px rgba(0,0,0,0.3));
 }
 
 .about__descr {
