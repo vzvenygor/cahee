@@ -122,6 +122,100 @@ img.persimmon {
   margin-bottom: 121px;
 }
 
+@media screen and (max-width: 1250px) {
+  .ilustration {
+    max-width: 970px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .ilustration__part-right {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  img.blueberry,
+  img.blackberry {
+    width: 45%;
+  }
+  img.aprikot,
+  img.yogurt,
+  img.persimmon {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .ilustration {
+    max-width: 800px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .ilustration img {
+    padding: 5px 5px;
+  }
+  h2.standart-title.content__title.content__title--gallery {
+    padding-top: 20px;
+    font-size: 76px;
+  }
+  .content__papagraph--gallery {
+    width: 100%;
+    margin: 5px 15px;
+  }
+  p.content__papagraph.content__papagraph--gallery {
+    font-size: 14px;
+  }
+  button.button-standart.button-standart--big {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  h2.standart-title.content__title.content__title--gallery {
+    padding-top: 20px;
+    font-size: 60px;
+  }
+  button.button-standart.button-standart--big {
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 25px;
+  }
+  h2.standart-title.content__title.content__title--gallery {
+    font-size: 58px;
+  }
+  p.content__papagraph.content__papagraph--gallery {
+    font-size: 12px;
+    line-height: 15px;
+    margin: 13px auto 23px;
+  }
+}
+
+@media screen and (max-width: 335px) {
+  .ilustration {
+    max-width: 300px;
+  }
+  img.aprikot,
+  img.yogurt,
+  img.persimmon {
+    width: 25%;
+  }
+  img.blueberry,
+  img.blackberry {
+    width: 30%;
+  }
+}
+
 h2 {
   margin: 0;
   padding: 0;
