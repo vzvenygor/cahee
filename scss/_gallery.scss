@@ -1,0 +1,163 @@
+$section-width: 1200px;
+
+.section__gallery {
+  background-color: #ffe92f;
+  text-align: center;
+
+}
+
+p.content__papagraph.content__papagraph--gallery {
+  margin: 21px auto 39px;
+  color: #262626;
+}
+
+h2.standart-title.content__title.content__title--gallery {
+  padding-top: 81px;
+  color: #262626;
+}
+.ilustration {
+  max-width: $section-width;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__part-right {
+    width: 33.33%;
+    flex-direction: column;
+  }
+
+  & img {
+    padding: 15px 15px;
+  }
+}
+
+img.aprikot {
+  width: 64.1%;
+}
+
+img.blueberry,
+img.blackberry {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+img.yogurt,
+img.persimmon {
+  width: 47.48%;
+}
+
+.content__papagraph--gallery {
+  padding: 0;
+  width: 630px;
+  height: 69px;
+  line-height: 27px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.button-standart--big {
+  width: 200px;
+  background-color: #5585a2;
+  border-color: #5585a2;
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 121px;
+}
+
+@media screen and (max-width: 1250px) {
+  .ilustration {
+    max-width: 970px;
+    justify-content: center;
+  }
+
+  .ilustration__part-right {
+    order: 3;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  img.blueberry,
+  img.blackberry {
+    width: 45%;
+  }
+
+  img.aprikot,
+  img.yogurt,
+  img.persimmon {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .ilustration {
+    max-width: 800px;
+    justify-content: center;
+  }
+
+  .ilustration img {
+    padding: 5px 5px;
+  }
+
+  h2.standart-title.content__title.content__title--gallery {
+    padding-top: 20px;
+    font-size: 76px;
+  }
+  .content__papagraph--gallery {
+    width: 100%;
+    margin: 5px 15px;
+  }
+
+  p.content__papagraph.content__papagraph--gallery {
+    font-size: 14px;
+  }
+
+  button.button-standart.button-standart--big {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  h2.standart-title.content__title.content__title--gallery {
+    padding-top: 20px;
+    font-size: 60px;
+  }
+
+  button.button-standart.button-standart--big {
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+
+    font-size: 14px;
+    line-height: 25px;
+  }
+
+  h2.standart-title.content__title.content__title--gallery {
+    font-size: 58px;
+  }
+
+  p.content__papagraph.content__papagraph--gallery {
+    font-size: 12px;
+    line-height: 15px;
+    margin: 13px auto 23px;
+  }
+}
+
+@media screen and (max-width: 335px) {
+  .ilustration {
+    max-width: 300px;
+  }
+
+  img.aprikot,
+  img.yogurt,
+  img.persimmon {
+    width: 25%;
+  }
+
+  img.blueberry,
+  img.blackberry {
+    width: 30%;
+  }
+}

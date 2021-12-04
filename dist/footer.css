@@ -12,7 +12,8 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-size: 16px;
-  padding: 32px 0;
+  padding: 32px 20px;
+  text-align: center;
 }
 
 @media screen and (max-width: 1920px) {

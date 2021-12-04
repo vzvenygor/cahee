@@ -1,0 +1,35 @@
+.section__about {
+  background-color: #00b0b0;
+}
+
+.about__content {
+  display: flex;
+  justify-content: center;
+}
+
+.about__left-block {
+  padding: 72px 100px 74px 0;
+
+  & img {
+    filter: drop-shadow(-18.794px 6.84px 25px rgba(0, 0, 0, 0.3));
+  }
+}
+.standart-title {
+  font-size: 90px;
+  font-weight: 700;
+}
+
+.about__descr {
+  max-width: 500px;
+  color: #ffffff;
+
+  &_title {
+    line-height: 27px;
+    padding-top: 220px;
+    padding-bottom: 60px;
+  }
+}
+
+p.about__papagraph {
+  padding: 0 0 22px 0;
+}

@@ -1,0 +1,72 @@
+$text-color: #262626;
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.section__subscribe {
+  padding-bottom: 160px;
+  background: url(../assets/img/bg.svg.png) center no-repeat;
+}
+
+.subscribe__text {
+  padding-left: 15px;
+  h2 {
+    font-size: 40px;
+    line-height: 27px;
+    color: $text-color;
+    font-weight: 700;
+    padding-top: 145px;
+  }
+
+  p {
+    max-width: 550px;
+    margin: 35px 0;
+    color: $text-color;
+    font-size: 17px;
+    line-height: 27px;
+    font-weight: 300;
+  }
+}
+
+.mail {
+  padding: 0;
+  width: 570px;
+  max-width: 570px;
+  height: 52px;
+  border-width: 1px;
+  padding-left: 15px;
+  box-sizing: border-box;
+  margin-left: 15px;
+}
+
+button {
+  &.button-standart {
+    width: 200px;
+    height: 54px;
+    font-size: 20px;
+    line-height: 25px;
+    color: #ffffff;
+    font-weight: 300;
+    font-family: "Raleway";
+    filter: drop-shadow(0px 2px 2.5px rgba(0, 0, 0, 0.5));
+    border: #ffffff;
+    cursor: pointer;
+  }
+
+  &.button-standart--green {
+    width: 170px;
+    background-color: #96b92c;
+    border-color: #96b92c;
+    margin-left: 30px;
+  }
+}
+
+::-webkit-input-placeholder {
+  font-size: 15px;
+  line-height: 27px;
+  color: $text-color;
+  font-weight: 300;
+  font-family: "Raleway";
+}
