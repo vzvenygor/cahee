@@ -1,0 +1,139 @@
+.section__blog {
+    background: #b07cf7;
+}
+
+.blog__content {
+    text-align: center;
+    color: white;
+}
+
+.blog__paragraph {
+    line-height: 25px; 
+    margin-bottom: 40px; 
+
+    @media screen and (max-width: 1024px) {
+        padding: 0 170px;
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 0 100px;
+    }
+    
+    @media screen and (max-width: 640px) {
+        padding: 0 80px;
+    }
+    
+    @media screen and (max-width: 320px) {
+        padding: 0 25px;
+    }
+}
+
+.blog__items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+
+.blog__item {
+    position: relative;
+    cursor: pointer;
+    flex: 33%;
+
+    &:nth-child(1) {
+        background: url(../assets/img/blog1.png) no-repeat;
+
+        @media screen and (max-width: 768px) {
+            left: -5px;        }
+        }
+
+    &:nth-child(2) {
+        background: url(../assets/img/blog2.png) no-repeat;
+    }
+
+    &:nth-child(3) {
+        background: url(../assets/img/blog3.png) no-repeat;
+    }
+
+    @media screen and (max-width: 1024px) {
+        flex: 0;
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
+
+    @media screen and (max-width: 640px) {
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    @media screen and (max-width: 320px) {
+        margin: 0;
+    }
+}
+
+.blog__item_date {
+    position: absolute;
+    background: #262626;
+    opacity: 50%;
+    top: 30px;
+    left: 30px;
+    width: 60px;
+    height: 60px;
+}
+
+.blog__item_date--day {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.blog__item_date--month {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.blog__item_content {
+    text-align: left;
+    padding-bottom: 30px;
+}
+
+.blog__item_title {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 21px;
+    width: 360px;
+    margin: 180px 0 20px 25px;
+
+    @media screen and (max-width: 768px) {
+        margin: 216px 0 22px 25px;
+    }
+
+    @media screen and (max-width: 320px) {
+        width: 260px;
+    }
+}
+
+.blog__item_author {
+    margin-left: 30px;
+}
+
+.button__blog {
+    margin-top: 50px;
+    margin-bottom: 120px;
+    background: #f72b3b;
+    cursor: pointer;
+
+    &:active {
+        background: white;
+        color: #f72b3b;
+        font-weight: 700;
+    }
+
+    @media screen and (max-width: 320px) {
+        margin-bottom: 60px;
+    }
+}
