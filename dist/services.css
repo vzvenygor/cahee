@@ -6,15 +6,12 @@
   position: relative;
   text-align: center;
   background: url(../assets/img/tomato.png) right no-repeat;
-  background-position-x: 54vw;
-  background-position-y: 26vh;
 }
 
 .services__title {
   position: absolute;
-  top: 20vw;
-  left: 50vw;
-  margin: 0;
+  top: 30%;
+  left: 55%;
   padding-top: 100px;
   color: #ffffff;
 }
@@ -38,7 +35,7 @@
   padding-top: 180px;
   padding-right: 210px;
   padding-bottom: 170px;
-  margin: 0 10vw;
+  margin-left: 10%;
 }
 
 @media screen and (max-width: 1280px) {
