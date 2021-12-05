@@ -1,7 +1,48 @@
 body {
   margin: 0;
   padding: 0;
+}
+
+.container {
   font-family: "Raleway", sans-serif;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.content-container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.content__papagraph {
+  font-size: 17px;
+  padding: 50px 300px 0;
+}
+
+.standart-title {
+  font-size: 90px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.button-standart {
+  width: 200px;
+  height: 54px;
+  font-size: 20px;
+  line-height: 25px;
+  color: #ffffff;
+  font-weight: 300;
+  font-family: "Raleway";
+  -webkit-filter: drop-shadow(0px 2px 2.5px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(0px 2px 2.5px rgba(0, 0, 0, 0.5));
+  border: #ffffff;
+  cursor: pointer;
 }
 
 .section__about {
@@ -9,29 +50,18 @@ body {
 }
 
 .about__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  background: url("../assets/img/about-img.png") left no-repeat;
 }
 
-.about__left-block {
-  padding: 72px 100px 74px 0;
-}
-
-.about__left-block img {
-  -webkit-filter: drop-shadow(-18.794px 6.84px 25px rgba(0, 0, 0, 0.3));
-          filter: drop-shadow(-18.794px 6.84px 25px rgba(0, 0, 0, 0.3));
-}
-
-.standart-title {
-  font-size: 90px;
-  font-weight: 700;
+@media screen and (max-width: 1164px) {
+  .about__content {
+    background: url("../assets/img/about-img.png") right no-repeat;
+    background-position-x: 535px;
+  }
 }
 
 .about__descr {
+  padding-left: 50%;
   max-width: 500px;
   color: #ffffff;
 }
@@ -42,8 +72,26 @@ body {
   padding-bottom: 60px;
 }
 
-p.about__papagraph {
-  padding: 0 0 22px 0;
+@media screen and (max-width: 720px) {
+  .about__descr_title {
+    line-height: 80px;
+  }
+}
+
+@media screen and (max-width: 1164px) {
+  .about__descr {
+    padding-left: 0;
+  }
+}
+
+.about__papagraph {
+  padding: 0;
+  padding-bottom: 22px;
+}
+
+.about__papagraph:last-child {
+  padding-bottom: 235px;
+  margin: 0;
 }
 
 .section__gallery {
@@ -53,12 +101,11 @@ p.about__papagraph {
 
 p.content__papagraph.content__papagraph--gallery {
   margin: 21px auto 39px;
-  color: #262626;
 }
 
-h2.standart-title.content__title.content__title--gallery {
+.content__title--gallery {
+  margin: 0;
   padding-top: 81px;
-  color: #262626;
 }
 
 .ilustration {
@@ -216,35 +263,44 @@ img.persimmon {
   }
 }
 
-h2 {
-  margin: 0;
-  padding: 0;
-}
-
 .section__subscribe {
   padding-bottom: 160px;
   background: url(../assets/img/bg.svg.png) center no-repeat;
 }
 
 .subscribe__text {
-  padding-left: 15px;
+  padding: 0 20px;
 }
 
 .subscribe__text h2 {
   font-size: 40px;
   line-height: 27px;
-  color: #262626;
   font-weight: 700;
   padding-top: 145px;
+}
+
+@media screen and (max-width: 480px) {
+  .subscribe__text h2 {
+    line-height: 40px;
+  }
 }
 
 .subscribe__text p {
   max-width: 550px;
   margin: 35px 0;
-  color: #262626;
   font-size: 17px;
   line-height: 27px;
   font-weight: 300;
+}
+
+.subscribe__form {
+  text-align: left;
+}
+
+@media screen and (max-width: 1024px) {
+  .subscribe__form {
+    text-align: center;
+  }
 }
 
 .mail {
@@ -259,31 +315,34 @@ h2 {
   margin-left: 15px;
 }
 
-button.button-standart {
-  width: 200px;
-  height: 54px;
-  font-size: 20px;
-  line-height: 25px;
-  color: #ffffff;
-  font-weight: 300;
-  font-family: "Raleway";
-  -webkit-filter: drop-shadow(0px 2px 2.5px rgba(0, 0, 0, 0.5));
-          filter: drop-shadow(0px 2px 2.5px rgba(0, 0, 0, 0.5));
-  border: #ffffff;
-  cursor: pointer;
+@media screen and (max-width: 720px) {
+  .mail {
+    width: 370px;
+  }
 }
 
-button.button-standart--green {
+@media screen and (max-width: 480px) {
+  .mail {
+    width: 250px;
+  }
+}
+
+.button-standart--green {
   width: 170px;
   background-color: #96b92c;
   border-color: #96b92c;
-  margin-left: 30px;
+  margin: 0 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  .button-standart--green {
+    margin-top: 40px;
+  }
 }
 
 ::-webkit-input-placeholder {
   font-size: 15px;
   line-height: 27px;
-  color: #262626;
   font-weight: 300;
   font-family: "Raleway";
 }

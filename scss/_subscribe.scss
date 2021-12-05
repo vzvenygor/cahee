@@ -1,9 +1,4 @@
-$text-color: #262626;
-
-h2 {
-  margin: 0;
-  padding: 0;
-}
+@import "mixins";
 
 .section__subscribe {
   padding-bottom: 160px;
@@ -11,22 +6,33 @@ h2 {
 }
 
 .subscribe__text {
-  padding-left: 15px;
+  padding: 0 20px;
+
   h2 {
     font-size: 40px;
     line-height: 27px;
-    color: $text-color;
     font-weight: 700;
     padding-top: 145px;
+
+    @include media-screen-xs {
+      line-height: 40px;
+    }
   }
 
   p {
     max-width: 550px;
     margin: 35px 0;
-    color: $text-color;
     font-size: 17px;
     line-height: 27px;
     font-weight: 300;
+  }
+}
+
+.subscribe__form {
+  text-align: left;
+
+  @include media-screen-tablet {
+    text-align: center;
   }
 }
 
@@ -39,34 +45,32 @@ h2 {
   padding-left: 15px;
   box-sizing: border-box;
   margin-left: 15px;
-}
 
-button {
-  &.button-standart {
-    width: 200px;
-    height: 54px;
-    font-size: 20px;
-    line-height: 25px;
-    color: #ffffff;
-    font-weight: 300;
-    font-family: "Raleway";
-    filter: drop-shadow(0px 2px 2.5px rgba(0, 0, 0, 0.5));
-    border: #ffffff;
-    cursor: pointer;
+  @include media-screen-small {
+    width: 370px;
   }
 
-  &.button-standart--green {
+  @include media-screen-xs {
+    width: 250px;
+  }
+
+}
+
+.button-standart--green {
     width: 170px;
     background-color: #96b92c;
     border-color: #96b92c;
-    margin-left: 30px;
-  }
+    margin: 0 30px;
+
+    @include media-screen-tablet {
+      margin-top: 40px;
+    }
 }
+
 
 ::-webkit-input-placeholder {
   font-size: 15px;
   line-height: 27px;
-  color: $text-color;
   font-weight: 300;
   font-family: "Raleway";
 }

@@ -1,3 +1,5 @@
+@import "mixins";
+
 .section__blog {
     background: #b07cf7;
 }
@@ -7,23 +9,23 @@
     color: white;
 }
 
+.blog__title {
+    padding-top: 100px;
+}
+
 .blog__paragraph {
     line-height: 25px; 
     margin-bottom: 40px; 
 
-    @media screen and (max-width: 1024px) {
+    @include media-screen-tablet {
         padding: 0 170px;
     }
 
-    @media screen and (max-width: 768px) {
+    @include media-screen-small {
         padding: 0 100px;
     }
     
-    @media screen and (max-width: 640px) {
-        padding: 0 80px;
-    }
-    
-    @media screen and (max-width: 320px) {
+    @include media-screen-xs {
         padding: 0 25px;
     }
 }
@@ -34,7 +36,7 @@
     align-items: center;
     flex-wrap: wrap;
 
-    @media screen and (max-width: 768px) {
+    @include media-screen-small {
         flex-direction: column;
     }
 }
@@ -42,14 +44,16 @@
 .blog__item {
     position: relative;
     cursor: pointer;
-    flex: 33%;
+    margin-bottom: 20px;
+    margin-right: 20px;
 
     &:nth-child(1) {
         background: url(../assets/img/blog1.png) no-repeat;
 
-        @media screen and (max-width: 768px) {
-            left: -5px;        }
+        @include media-screen-small {
+            left: -5px;        
         }
+    }
 
     &:nth-child(2) {
         background: url(../assets/img/blog2.png) no-repeat;
@@ -57,20 +61,15 @@
 
     &:nth-child(3) {
         background: url(../assets/img/blog3.png) no-repeat;
+        margin-right: 0;
     }
 
-    @media screen and (max-width: 1024px) {
-        flex: 0;
-        margin-bottom: 20px;
-        margin-right: 20px;
-    }
-
-    @media screen and (max-width: 640px) {
+    @include media-screen-small {
         margin-bottom: 20px;
         margin-right: 0;
     }
 
-    @media screen and (max-width: 320px) {
+    @include media-screen-xxs {
         margin: 0;
     }
 }
@@ -108,11 +107,11 @@
     width: 360px;
     margin: 180px 0 20px 25px;
 
-    @media screen and (max-width: 768px) {
+    @include media-screen-small {
         margin: 216px 0 22px 25px;
     }
 
-    @media screen and (max-width: 320px) {
+    @include media-screen-xxs {
         width: 260px;
     }
 }
@@ -133,7 +132,7 @@
         font-weight: 700;
     }
 
-    @media screen and (max-width: 320px) {
+    @include media-screen-xxs {
         margin-bottom: 60px;
     }
 }
