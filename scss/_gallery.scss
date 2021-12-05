@@ -1,4 +1,4 @@
-$section-width: 1200px;
+@import "constants";
 
 .section__gallery {
   background-color: #ffe92f;
@@ -8,15 +8,14 @@ $section-width: 1200px;
 
 p.content__papagraph.content__papagraph--gallery {
   margin: 21px auto 39px;
-  color: #262626;
 }
 
-h2.standart-title.content__title.content__title--gallery {
+.content__title--gallery {
+  margin: 0;
   padding-top: 81px;
-  color: #262626;
 }
 .ilustration {
-  max-width: $section-width;
+  max-width: $content-width;
   margin: 0 auto;
   box-sizing: border-box;
   display: flex;

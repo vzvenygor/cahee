@@ -1,27 +1,27 @@
+@import "mixins";
+
 .section__contact {
     width: 100%;
     text-align: center;
     background: url(../assets/img/section7-background.png) center no-repeat;
     background-size: cover;
-    color: #262626;
-    font-family: "Raleway", sans-serif;
 }
 
-.content__title {
+.contact__title {
     font-size: 90px;
     padding-top: 102px;
+    margin: 0;
 
-    @media screen and (max-width: 320px) {
+    @include media-screen-xs {
         font-size: 60px;
         padding-top: 50px;
     }
-
 }
 
 .contact__papagraph {
     padding: 50px 0;
 
-    @media screen and (max-width: 320px) {
+    @include media-screen-xs {
         font-size: 14px; 
         padding: 30px 10px;
     }
@@ -32,7 +32,7 @@
     justify-content: center;
     padding-top: 45px;
 
-    @media screen and (max-width: 1024px) {
+    @include media-screen-tablet {
         flex-direction: column;
         padding-top: 0;  
     }
@@ -41,14 +41,13 @@
         padding-right: 150px;
         max-width: 600px;
 
-        @media screen and (max-width: 1200px) {
+        @include media-screen-medium {
             padding-right: 100px;
         }
 
-        @media screen and (max-width: 1024px) {
+        @include media-screen-tablet {
             padding-right: 0;
             margin: 0 auto;     
-
         }
     }
     
@@ -73,11 +72,11 @@
             background-repeat: no-repeat;
         }
 
-        @media screen and (max-width: 640px) {
+        @include media-screen-small {
             width: 300px;
         }
 
-        @media screen and (max-width: 320px) {
+        @include media-screen-xs {
             width: 250px;
         }
     }
@@ -90,7 +89,7 @@
             background-image: none;
         }
 
-        @media screen and (max-width: 1024px) {
+        @include media-screen-tablet {
             margin-bottom: 50px;
         }
     }
@@ -106,8 +105,10 @@
     text-align: left;
     font-size: 17px;
 
-    @media screen and (max-width: 1024px) {
+
+    @include media-screen-tablet {
         text-align: center;
+        text-shadow: 1px 1px 15px white, -1px -1px 4em white;
     }
 }
 

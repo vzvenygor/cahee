@@ -1,25 +1,20 @@
+@import "mixins";
+
 .section__about {
   background-color: #00b0b0;
 }
 
 .about__content {
-  display: flex;
-  justify-content: center;
-}
+  background: url("../assets/img/about-img.png") left no-repeat;
 
-.about__left-block {
-  padding: 72px 100px 74px 0;
-
-  & img {
-    filter: drop-shadow(-18.794px 6.84px 25px rgba(0, 0, 0, 0.3));
+  @media screen and (max-width: 1164px) {
+    background: url("../assets/img/about-img.png") right no-repeat;
+    background-position-x: 535px;  
   }
-}
-.standart-title {
-  font-size: 90px;
-  font-weight: 700;
 }
 
 .about__descr {
+  padding-left: 50%;
   max-width: 500px;
   color: #ffffff;
 
@@ -27,9 +22,23 @@
     line-height: 27px;
     padding-top: 220px;
     padding-bottom: 60px;
+
+    @include media-screen-small {
+      line-height: 80px;
+    }
+  }
+  
+  @media screen and (max-width: 1164px) {
+    padding-left: 0;   
   }
 }
 
-p.about__papagraph {
-  padding: 0 0 22px 0;
+.about__papagraph {
+  padding: 0;
+  padding-bottom: 22px;
+
+  &:last-child {
+    padding-bottom: 235px;
+    margin: 0;
+  }
 }
