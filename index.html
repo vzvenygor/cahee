@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/top.css" />
+    <link rel="stylesheet" href="./dist/top.css" />
     <link rel="stylesheet" href="./dist/style.css" />
     <link rel="stylesheet" href="./dist/services.css" />
     <link rel="stylesheet" href="./dist/contact.css" />
@@ -31,19 +31,25 @@
             <div class="header__logo">
               <span><a href="#">Cahee</a></span>
             </div>
-            <div class="header__nav">
-              <nav class="nav">
+            <nav class="header__nav">
+              <button class="burger" onclick="this.classList.toggle('burger--active')">
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+              </button>
+
+              <ul class="nav-list">
                 <li class="nav__li"><a href="#top">HOME</a></li>
                 <li class="nav__li"><a href="#about">ABOUT</a></li>
                 <li class="nav__li"><a href="#services">SERVICES</a></li>
                 <li class="nav__li"><a href="#gallery">GALLERY</a></li>
                 <li class="nav__li"><a href="#blog">BLOG</a></li>
                 <li class="nav__li"><a href="#contact">CONTACT</a></li>
-              </nav>
-            </div>
+              </ul>
+            </nav>
           </div>
 
-          <div class="top__content">
+          <div class="top__content content-container">
             <div class="top__content--left">
               <div class="top__descr">
                 <h1 class="top__descr_title">Fresh Life</h1>
