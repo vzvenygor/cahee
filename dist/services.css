@@ -95,6 +95,9 @@
   .services__button {
     max-width: 300px;
   }
+  .services__button::before {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 400px) {

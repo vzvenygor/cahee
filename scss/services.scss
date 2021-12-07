@@ -79,6 +79,10 @@
 
     @media screen and (max-width: 640px) {
         max-width: 300px;
+
+        &::before {
+            display: none;
+        }
     }
 
     @include media-screen-xxs {
